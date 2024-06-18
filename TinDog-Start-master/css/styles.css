@@ -1,0 +1,175 @@
+body {
+  font-family: "Montserrat";
+}
+ /* id tags */
+#title {
+  background-color: #ff4c68;
+  color: #fff;
+ padding-bottom: 15%;
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+
+h1 {
+  font-family: "Montserrat-black";
+  font-size: 3.5rem;
+  font-weight:800;
+  line-height: 1.5;
+  width: 400px;
+  padding-top: 20px;
+}
+
+h2 {
+  font-family: "Montserrat-bold";
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-family: "Montserrat-bold";
+}
+
+p {
+  color: #8f8f8f;
+}
+
+ /* img */
+.iphone {
+  width: 30%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 25%;
+}
+/* navigation Bar */
+.navbar {
+  padding: 0 0 40px 0;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-family: "ubuntu";
+  padding-left: 0;
+}
+
+.nav-itam {
+  font-size: 1rem;
+}
+
+.nav-link {
+  margin: 15px;
+}
+
+/* Download-button */
+
+.downloud-button {
+margin: 30px 20px;
+}
+
+/* features section */
+
+#features {
+  padding: 7% 15%;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.features-box {
+text-align: center;
+padding: 5%;
+}
+
+.fontawesome {
+  color: #ef8172;
+  margin: 1rem;
+}
+
+.fontawesome:hover {
+  color: #ff4c68;
+}
+
+/* testimonial */
+
+#testimonials {
+  text-align: center;
+  background-color: #ef8172;
+  color: #fff;
+}
+
+.testimonial-image {
+  width: 80px;
+  border-radius: 100%;
+}
+
+.carousel-inner {
+    padding: 7% 20%;
+}
+
+/* press */
+
+#press {
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 7%;
+}
+
+.press-img {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* pricing */
+
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+
+.pricing-collom {
+  padding: 3% 2%;
+}
+
+/* cta */
+
+#cta {
+  padding: 7% 25%;
+  background-color: #ff4c68;
+  color: #fff;
+  text-align: center;
+    line-height: 1;
+}
+
+.cta-heading {
+  font-family:"Montserrat-black";
+  font-size: 3rem;
+
+}
+
+/* footer */
+
+#footer {
+  background-color: #fff;
+  padding: 5% 10%;
+  text-align: center;
+}
+
+.footer-link {
+  margin: 20px;
+}
+
+/* media */
+
+@media (max-width: 1028px) {
+ .iphone {
+   position: static;
+  transform: rotate(0);
+  /* padding-top: 50px; */
+ }
+
+ #title {
+   text-align: center;
+ }
+}

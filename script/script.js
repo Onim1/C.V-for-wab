@@ -22,32 +22,20 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// Get the dropdown button
-var dropbtn = document.querySelector(".dropbtn");
+document.addEventListener('DOMContentLoaded', function() {
+  const dropdown = document.querySelector('.dropdown');
+  const dropbtn = document.querySelector('.dropbtn');
+  const dropdownContent = document.querySelector('.dropdown-content');
 
-// Toggle the display of the dropdown content on click
-dropbtn.onclick = function() {
-  document.querySelector(".dropdown-content").classList.toggle("show");
-}
+  dropbtn.addEventListener('click', function() {
+    dropdownContent.classList.toggle('show');
+  });
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    for (var i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+  window.addEventListener('click', function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      if (dropdownContent.classList.contains('show')) {
+        dropdownContent.classList.remove('show');
       }
     }
-  }
-}
-
-document.querySelector('.dropbtn').addEventListener('click', function() {
-  var content = this.nextElementSibling;
-  if (content.style.maxHeight){
-      content.style.maxHeight = null;
-  } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-  } 
+  });
 });

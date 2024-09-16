@@ -27,12 +27,18 @@ document.addEventListener('DOMContentLoaded', function() {
   const dropbtn = document.querySelector('.dropbtn');
   const dropdownContent = document.querySelector('.dropdown-content');
 
-  dropbtn.addEventListener('click', function() {
+  if (!dropdown || !dropbtn || !dropdownContent) {
+    console.error('Dropdown elements not found');
+    return;
+  }
+
+  dropbtn.addEventListener('click', function(event) {
+    event.stopPropagation();
     dropdownContent.classList.toggle('show');
   });
 
   window.addEventListener('click', function(event) {
-    if (!event.target.matches('.dropbtn')) {
+    if (!event.target.matches('.dropdown')) {
       if (dropdownContent.classList.contains('show')) {
         dropdownContent.classList.remove('show');
       }
